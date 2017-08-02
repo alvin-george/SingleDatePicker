@@ -19,17 +19,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick a time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nog-17-IFo">
-                                <rect key="frame" x="10" y="70" width="355" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick a date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nog-17-IFo">
+                                <rect key="frame" x="10" y="70" width="394" height="40"/>
                                 <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="wel-Hr-FdL"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="g2Z-2k-ZOe"/>
@@ -43,12 +43,15 @@
                             <constraint firstAttribute="trailing" secondItem="nog-17-IFo" secondAttribute="trailing" constant="10" id="wEA-b9-0d7"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="600"/>
                     <connections>
                         <outlet property="singleDatePickerTextfield" destination="nog-17-IFo" id="ph2-bC-h84"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="146" y="157"/>
         </scene>
         <!--Single Date Picker Controller-->
         <scene sceneID="YbJ-yl-b2x">
@@ -59,11 +62,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8F3-gX-MPh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gUm-3Z-h59">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ted-gZ-YST">
-                                <rect key="frame" x="0.0" y="520" width="414" height="280"/>
+                                <rect key="frame" x="0.0" y="390" width="414" height="210"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6W-8G-dYR">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
@@ -153,7 +156,7 @@
                                         </constraints>
                                     </view>
                                     <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lMD-mP-ht3">
-                                        <rect key="frame" x="0.0" y="40" width="414" height="240"/>
+                                        <rect key="frame" x="0.0" y="40" width="414" height="170"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <date key="date" timeIntervalSinceReferenceDate="520927818.63880098">
                                             <!--2017-07-05 06:10:18 +0000-->
@@ -184,7 +187,7 @@
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="414" height="800"/>
+                    <size key="freeformSize" width="414" height="600"/>
                     <connections>
                         <outlet property="datePicker" destination="lMD-mP-ht3" id="Cu9-4o-F9I"/>
                         <outlet property="pickerContainerView" destination="ted-gZ-YST" id="sNT-2x-PIC"/>
@@ -195,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5L-vl-7f2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933" y="157"/>
+            <point key="canvasLocation" x="877" y="157"/>
         </scene>
     </scenes>
 </document>

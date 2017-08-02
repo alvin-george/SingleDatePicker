@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UISingleDatePickerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
     
@@ -46,12 +46,12 @@ class ViewController: UIViewController, UITextFieldDelegate, UISingleDatePickerD
     func showEZSingleDatePickerView(currentViewControllerIdentifier : String?)
     {
         
-        var  customTimePicker:SingleDatePickerController = self.storyboard?.instantiateViewController(withIdentifier: "singleDatePickerController") as! SingleDatePickerController
+        let  customDatePicker:SingleDatePickerController = self.storyboard?.instantiateViewController(withIdentifier: "singleDatePickerController") as! SingleDatePickerController
         
-        customTimePicker.currentViewController = currentViewControllerIdentifier!
-        customTimePicker.delegate =  self
-        customTimePicker.modalPresentationStyle = .overCurrentContext
-        self.present(customTimePicker, animated: true, completion: nil)
+        customDatePicker.currentViewController = currentViewControllerIdentifier!
+        customDatePicker.delegate =  self
+        customDatePicker.modalPresentationStyle = .overCurrentContext
+        self.present(customDatePicker, animated: true, completion: nil)
     }
     
     
